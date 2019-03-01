@@ -76,6 +76,8 @@ def main():
     # as a 4 byte integer in network byte order (big endian)
     longPacker = struct.Struct("!L")
     print "Fuck"
+    print "Conny addy"
+    print s2.connect_address
     long = s2.recv(4)
     print "you"
     fn = longPacker.unpack(long)

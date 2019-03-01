@@ -104,7 +104,11 @@ def main():
     # send the length of the digest
     long = len(digest)
     digestLenPacked = longPacker.pack(long)
+    print "Digest len send"
+    print len(digestLenPacked)
     sent = s.send(digestLenPacked)
+    print "send len"
+    print sent
     if (sent != 4):
         raise RuntimeError("socket broken")
     
